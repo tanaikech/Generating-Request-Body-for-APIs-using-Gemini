@@ -201,6 +201,8 @@ The following functions test the `GenerateRequestBody` class. **Remember to repl
 
 Each of the `test_GoogleDocs`, `test_GoogleSheets`, and `test_GoogleSlides` functions generates a request body to insert the text "sample text" where "sample" is red and "text" is blue, and then executes the request using the `batchUpdate` method.
 
+Please use each JSON schema.
+
 ```javascript
 const apiKey = "###"; // Replace with your actual API key
 
