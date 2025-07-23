@@ -268,6 +268,271 @@ function test_GoogleDocs2() {
 }
 ```
 
+### Testing
+
+The function `test_GoogleDocs` generated the following request body for the batchUpdate method of Docs API.
+
+```json
+{
+  "requests": [
+    {
+      "insertText": {
+        "location": {
+          "index": 1
+        },
+        "text": "sample text"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 1,
+          "endIndex": 7
+        },
+        "textStyle": {
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "red": 1,
+                "green": 0,
+                "blue": 0
+              }
+            }
+          }
+        },
+        "fields": "foregroundColor"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 8,
+          "endIndex": 12
+        },
+        "textStyle": {
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 1
+              }
+            }
+          }
+        },
+        "fields": "foregroundColor"
+      }
+    }
+  ]
+}
+```
+
+The function `test_GoogleDocs2` generated the following request body for the batchUpdate method of Docs API.
+
+```json
+{
+  "requests": [
+    {
+      "insertTable": {
+        "rows": 2,
+        "columns": 3,
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "C2",
+        "location": {
+          "index": 16
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "B2",
+        "location": {
+          "index": 14
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "A2",
+        "location": {
+          "index": 12
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "C1",
+        "location": {
+          "index": 9
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "B1",
+        "location": {
+          "index": 7
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "A1",
+        "location": {
+          "index": 5
+        }
+      }
+    }
+  ]
+}
+```
+
+The function `test_GoogleSheets` generated the following request body for the batchUpdate method of Sheets API.
+
+```json
+{
+  "requests": [
+    {
+      "updateCells": {
+        "start": {
+          "sheetId": 0,
+          "rowIndex": 0,
+          "columnIndex": 0
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "sample text"
+                },
+                "textFormatRuns": [
+                  {
+                    "startIndex": 0,
+                    "format": {
+                      "foregroundColor": {
+                        "red": 1,
+                        "green": 0,
+                        "blue": 0
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 6,
+                    "format": {
+                      "foregroundColor": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 1
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue,textFormatRuns"
+      }
+    }
+  ]
+}
+```
+
+The function `test_GoogleSlides` generated the following request body for the batchUpdate method of Slides API.
+
+```json
+{
+  "requests": [
+    {
+      "createShape": {
+        "objectId": "myTextBoxId",
+        "shapeType": "TEXT_BOX",
+        "elementProperties": {
+          "pageObjectId": "p",
+          "size": {
+            "width": {
+              "magnitude": 2857500,
+              "unit": "EMU"
+            },
+            "height": {
+              "magnitude": 476250,
+              "unit": "EMU"
+            }
+          },
+          "transform": {
+            "scaleX": 1,
+            "scaleY": 1,
+            "shearX": 0,
+            "shearY": 0,
+            "translateX": 100000,
+            "translateY": 100000,
+            "unit": "EMU"
+          }
+        }
+      }
+    },
+    {
+      "insertText": {
+        "objectId": "myTextBoxId",
+        "text": "sample text",
+        "insertionIndex": 0
+      }
+    },
+    {
+      "updateTextStyle": {
+        "objectId": "myTextBoxId",
+        "textRange": {
+          "type": "FIXED_RANGE",
+          "startIndex": 0,
+          "endIndex": 6
+        },
+        "style": {
+          "foregroundColor": {
+            "opaqueColor": {
+              "rgbColor": {
+                "red": 1,
+                "green": 0,
+                "blue": 0
+              }
+            }
+          }
+        },
+        "fields": "foregroundColor"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "objectId": "myTextBoxId",
+        "textRange": {
+          "type": "FIXED_RANGE",
+          "startIndex": 7,
+          "endIndex": 11
+        },
+        "style": {
+          "foregroundColor": {
+            "opaqueColor": {
+              "rgbColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 1
+              }
+            }
+          }
+        },
+        "fields": "foregroundColor"
+      }
+    }
+  ]
+}
+```
+
 ## Summary
 
 *   **Natural Language to API Requests**: This method allows you to generate complex API request bodies using simple, human-like instructions.
