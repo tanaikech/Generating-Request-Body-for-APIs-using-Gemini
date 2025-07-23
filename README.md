@@ -31,9 +31,9 @@ Before you begin, ensure you have the following:
 2.  **Google Apps Script Project**: Create a new standalone Google Apps Script project. For guidance, refer to the [official documentation](https://developers.google.com/apps-script/guides/projects#create-standalone).
 3.  **GeminiWithFiles Library**: Install the `GeminiWithFiles` Google Apps Script library. This library simplifies the use of the Gemini API. You can find installation instructions on the [GeminiWithFiles GitHub page](https://github.com/tanaikech/GeminiWithFiles?tab=readme-ov-file#3-how-to-use-geminiwithfiles).
 4.  **JSON Schema of Request Body**: Prepare the JSON schemas that define the structure of the API request bodies. These schemas are crucial for guiding Gemini in generating the correct output. You can find pre-made JSON schemas for the `batchUpdate` methods of Docs, Sheets, and Slides in the repository:
-    *   [jsonSchemaForDocs](https://github.com/tanaikech/Generating-Request-Body-for-APIs-using-Gemini/blob/main/jsonSchemaForDocs.js)
-    *   [jsonSchemaForSheets](https://github.com/tanaikech/Generating-Request-Body-for-APIs-using-Gemini/blob/main/jsonSchemaForSheets.js)
-    *   [jsonSchemaForSlides](https://github.com/tanaikech/Generating-Request-Body-for-APIs-using-Gemini/blob/main/jsonSchemaForSlides.js)
+    *   [jsonSchemaForDocs](https://github.com/tanaikech/Generating-Request-Body-for-APIs-using-Gemini/blob/master/jsonSchemaForDocs.js)
+    *   [jsonSchemaForSheets](https://github.com/tanaikech/Generating-Request-Body-for-APIs-using-Gemini/blob/master/jsonSchemaForSheets.js)
+    *   [jsonSchemaForSlides](https://github.com/tanaikech/Generating-Request-Body-for-APIs-using-Gemini/blob/master/jsonSchemaForSlides.js)
 
 ## Usage
 
